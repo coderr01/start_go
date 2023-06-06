@@ -28,10 +28,15 @@ $ go run .
 
 # Making build
 $ go list -f '{{.Target}}' ## (in your hello directory) ## Suppose -- /xyz/abc/go/bin/hello
+
 $ export PATH=$PATH:/xyz/abc/go/bin/hello
+
 $ go env -w GOBIN=/xyz/abc/go/bin
+
 $ go install
+
 $ ./hello
+
 $ go build 
 
 # Reopen terminal
