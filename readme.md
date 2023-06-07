@@ -55,5 +55,6 @@ $ go build
 
 # Reopen terminal
 $ export PATH=$PATH:/xyz/abc/go/bin/hello
+
 $ hello
 
