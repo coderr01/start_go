@@ -10,19 +10,33 @@ $ go version
 
 # Creating the program
 $ mkdir program
+
 $ cd program
+
 $ mkdir hello greetings
+
 $ cd hello
+
 $ go mod init test.com/hello
+
 $ touch hello.go
+
 $ cd ..
+
 $ cd greetings
+
 $ go  mod init test.com/greetings
+
 $ touch greetings.go
+
 $ cd ..
+
 $ cd hello
+
 $ go mod edit --replace test.com/greetings=../greetings
+
 $ go mod tidy
+
 $ go run .
 
 
